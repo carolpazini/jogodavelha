@@ -1,6 +1,3 @@
-
-
-
 icone = "<img src = ankh.png>";
  //trocar letras por imagens
 
