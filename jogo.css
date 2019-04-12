@@ -5,6 +5,7 @@
     height: 408px;
     float: left;
     background-color: bisque;
+    margin: 10px ;
 
 }
 
@@ -19,6 +20,7 @@
     padding: 2px;
     float: left;
     cursor: pointer;
+   
 }
 
 .icone{
@@ -29,4 +31,14 @@
 button{
     width: 200px;
     height: 30px;
+    background-color: burlywood;
+}
+
+.margem{
+    margin: 10px ;
+}
+
+.margem2{
+    margin-top: 10px;
+    padding: 10px;
 }

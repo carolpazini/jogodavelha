@@ -1,16 +1,17 @@
 icone = "<img src = ankh.png>";
  //trocar letras por imagens
 
- function joga(celula){
-    celulaclicada = document.getElementById(celula).innerHTML;
-   if (celulaclicada == "<img src = ankh.png>" || celulaclicada == "<img src = horus.png>"){
-       alert("Aqui não!");
-   }else{
-        document.getElementById(celula).innerHTML = icone;
+ function joga(bloco){
+    document.getElementById(bloco).innerHTML = icone;{     
+        
         if (icone == "<img src = ankh.png>"){
+
             icone = "<img src = horus.png>";
+
         }else{
+
             icone = "<img src = ankh.png>";
+
         }
    }
 }
