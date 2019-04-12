@@ -1,22 +1,23 @@
 
-letra = "X";
- 
+icone = "X";
+ //trocar letras por imagens
+
 function joga(celula){
     celulaclicada = document.getElementById(celula).innerHTML;
    if (celulaclicada == "X" || celulaclicada == "O"){
-       alert("Opa, este quadrado já foi escolhido!");
+       alert("Aqui não!");
    }else{
-        document.getElementById(celula).innerHTML = letra;
-        if (letra == "X"){
+        document.getElementById(celula).innerHTML = icone;
+        if (icone == "X"){
 
-            letra = "O";
+            icone = "O";
 
         }else{
-            letra = "X";
+            icone = "X";
         }
    }
 }
- 
+//verifica-chama o bloco escolhido
 function verif(){
    a1 = document.getElementById('a1').innerHTML;
    a2 = document.getElementById('a2').innerHTML;
@@ -28,6 +29,7 @@ function verif(){
    c2 = document.getElementById('c2').innerHTML;
    c3 = document.getElementById('c3').innerHTML;
 
+//vê quem ganhou
    if ((
         (a1 != '') && (a2 != '') && (a3 != '') && (a1 == a2) && (a2 == a3)) || (
         (a1 != '') && (b2 != '') && (c3 != '') && (a1 == b2) && (b2 == c3)) || (
@@ -36,23 +38,13 @@ function verif(){
         (c1 != '') && (c2 != '') && (c3 != '') && (c1 == c2) && (c2 == c3)) || (
         (a2 != '') && (b2 != '') && (c2 != '') && (a2 == b2) && (b2 == c2)) || (
         (a3 != '') && (b3 != '') && (c3 != '') && (a3 == b3) && (b3 == c3)) || (
-        (c1 != '') && (b2 != '') && (a3 != '') && (c1 == b2) && (b2 == a3))
+        (c1 != '') && (b2 != '') && (a3 != '') && (c1 == b2) && (b2 == a3)) // acho que deve ter um jeito mais simples de fazer isso :(
     ){
 
-       alert('Você ganhou! Parabéns campeão!');
-      novo();
-      
+       alert('Parece que alguém ganhou!');
+       novo();
+
     }
 }
  
-function novo(){
-    for (i=1; i<4; i++){
-       for (j=1; j<4; j++){
-          nomecelula = 'cel' + i + j
-           document.getElementById(nomecelula).innerHTML = '';
-      
-      }
-   }
-}
- 
- 
+

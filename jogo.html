@@ -13,15 +13,15 @@
 
     <div class="tabuleiro">
  
-        <div>
+        <!--primeira linha-->
         <div id="a1" class="bloco" onclick="joga(this.id);verif();"></div>
         <div id="a2" class="bloco" onclick="joga(this.id);verif();"></div>
         <div id="a3" class="bloco" onclick="joga(this.id);verif();"></div>
-        </div>
+        <!--segunda linha-->
         <div id="b1" class="bloco" onclick="joga(this.id);verif();"></div>
         <div id="b2" class="bloco" onclick="joga(this.id);verif();"></div>
         <div id="b3" class="bloco" onclick="joga(this.id);verif();"></div>
-        
+        <!--terceira linha-->
         <div id="c1" class="bloco" onclick="joga(this.id);verif();"></div>
         <div id="c2" class="bloco" onclick="joga(this.id);verif();"></div>
         <div id="c3" class="bloco" onclick="joga(this.id);verif();"></div>
@@ -29,9 +29,14 @@
          
     </div>
 
-
-    <input type="button" name="limpar" value="Novo jogo" onclick="novo();" />
-
+    <div><!--colocar isso debaixo do jogo-->
+        <h3>Bem-vindo ao Jogo das Antiguidades</h3>
+        <h4>Escolha entre um Ankh ou um Olho de Hórus</h4>
+        <img src="ankh.png" alt="Ankh" class="icone">
+        <img src="horus.png" alt="Hórus" class="icone">
+        <!--dar um jeito de limpar a tela-->
+        <input type="button" name="limpar" value="Novo jogo" onclick="novo();"/>
+    </div>
 
 </body>
 </html>

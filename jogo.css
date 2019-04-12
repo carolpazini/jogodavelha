@@ -5,7 +5,7 @@
     height: 408px;
     float: left;
     background-color: bisque;
-    
+
 }
 
 
@@ -19,4 +19,9 @@
     padding: 2px;
     float: left;
     cursor: pointer;
+}
+
+.icone{
+    width: 124px;
+    height: 124px;
 }
