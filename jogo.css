@@ -1,9 +1,11 @@
 
 .tabuleiro{
+
     width: 408px;
     height: 408px;
     float: left;
     background-color: bisque;
+    
 }
 
 

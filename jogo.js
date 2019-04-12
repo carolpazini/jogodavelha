@@ -10,7 +10,7 @@ function joga(celula){
         if (letra == "X"){
 
             letra = "O";
-            
+
         }else{
             letra = "X";
         }
@@ -18,19 +18,31 @@ function joga(celula){
 }
  
 function verif(){
-   c11 = document.getElementById('cel11').innerHTML;
-   c12 = document.getElementById('cel12').innerHTML;
-   c13 = document.getElementById('cel13').innerHTML;
-   c21 = document.getElementById('cel21').innerHTML;
-   c22 = document.getElementById('cel22').innerHTML;
-   c23 = document.getElementById('cel23').innerHTML;
-   c31 = document.getElementById('cel31').innerHTML;
-   c32 = document.getElementById('cel32').innerHTML;
-   c33 = document.getElementById('cel33').innerHTML;
-   if (((c11 != '') && (c12 != '') && (c13 != '') && (c11 == c12) && (c12 == c13)) || ((c11 != '') && (c22 != '') && (c33 != '') && (c11 == c22) && (c22 == c33)) || ((c11 != '') && (c21 != '') && (c31 != '') && (c11 == c21) && (c21 == c31)) || ((c21 != '') && (c22 != '') && (c23 != '') && (c21 == c22) && (c22 == c23)) || ((c31 != '') && (c32 != '') && (c33 != '') && (c31 == c32) && (c32 == c33)) || ((c12 != '') && (c22 != '') && (c32 != '') && (c12 == c22) && (c22 == c32)) || ((c13 != '') && (c23 != '') && (c33 != '') && (c13 == c23) && (c23 == c33)) || ((c31 != '') && (c22 != '') && (c13 != '') && (c31 == c22) && (c22 == c13))){
+   a1 = document.getElementById('a1').innerHTML;
+   a2 = document.getElementById('a2').innerHTML;
+   a3 = document.getElementById('a3').innerHTML;
+   b1 = document.getElementById('b1').innerHTML;
+   b2 = document.getElementById('b2').innerHTML;
+   b3 = document.getElementById('b3').innerHTML;
+   c1 = document.getElementById('c1').innerHTML;
+   c2 = document.getElementById('c2').innerHTML;
+   c3 = document.getElementById('c3').innerHTML;
+
+   if ((
+        (a1 != '') && (a2 != '') && (a3 != '') && (a1 == a2) && (a2 == a3)) || (
+        (a1 != '') && (b2 != '') && (c3 != '') && (a1 == b2) && (b2 == c3)) || (
+        (a1 != '') && (b1 != '') && (c1 != '') && (a1 == b1) && (b1 == c1)) || (
+        (b1 != '') && (b2 != '') && (b3 != '') && (b1 == b2) && (b2 == b3)) || (
+        (c1 != '') && (c2 != '') && (c3 != '') && (c1 == c2) && (c2 == c3)) || (
+        (a2 != '') && (b2 != '') && (c2 != '') && (a2 == b2) && (b2 == c2)) || (
+        (a3 != '') && (b3 != '') && (c3 != '') && (a3 == b3) && (b3 == c3)) || (
+        (c1 != '') && (b2 != '') && (a3 != '') && (c1 == b2) && (b2 == a3))
+    ){
+
        alert('Você ganhou! Parabéns campeão!');
       novo();
-   }
+      
+    }
 }
  
 function novo(){
