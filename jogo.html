@@ -11,27 +11,23 @@
 <body>
     <script type="text/javascript" src="jogo.js"></script>
 
-    <table class="ble">
+    <div class="tabuleiro">
  
-        <tr>
-        <td align="center" valign="middle" id="cel11" class="bla" onclick="joga(this.id);verif();"></td>
-        <td align="center" valign="middle" id="cel12" class="bla" onclick="joga(this.id);verif();"></td>
-        <td align="center" valign="middle" id="cel13" class="bla" onclick="joga(this.id);verif();"></td>
-        </tr>
+       
+        <div id="a1" class="bloco" onclick="joga(this.id);verif();"></div>
+        <div id="a2" class="bloco" onclick="joga(this.id);verif();"></div>
+        <div id="a3" class="bloco" onclick="joga(this.id);verif();"></div>
+    
+        <div id="b1" class="bloco" onclick="joga(this.id);verif();"></div>
+        <div id="b2" class="bloco" onclick="joga(this.id);verif();"></div>
+        <div id="b3" class="bloco" onclick="joga(this.id);verif();"></div>
+        
+        <div id="c1" class="bloco" onclick="joga(this.id);verif();"></div>
+        <div id="c2" class="bloco" onclick="joga(this.id);verif();"></div>
+        <div id="c3" class="bloco" onclick="joga(this.id);verif();"></div>
+
          
-        <tr>
-        <td align="center" valign="middle" id="cel21" class="bla" onclick="joga(this.id);verif();"></td>
-        <td align="center" valign="middle" id="cel22" class="bla" onclick="joga(this.id);verif();"></td>
-        <td align="center" valign="middle" id="cel23" class="bla" onclick="joga(this.id);verif();"></td>
-        </tr>
-         
-        <tr>
-        <td align="center" valign="middle" id="cel31" class="bla" onclick="joga(this.id);verif();"></td>
-        <td align="center" valign="middle" id="cel32" class="bla" onclick="joga(this.id);verif();"></td>
-        <td align="center" valign="middle" id="cel33" class="bla" onclick="joga(this.id);verif();"></td>
-        </tr>
-         
-        </table>
+    </div>
         <br><input type="button" name="limpar" value="Novo jogo" onclick="novo();" />
 
 

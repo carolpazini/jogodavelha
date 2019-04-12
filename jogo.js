@@ -8,7 +8,9 @@ function joga(celula){
    }else{
         document.getElementById(celula).innerHTML = letra;
         if (letra == "X"){
+
             letra = "O";
+            
         }else{
             letra = "X";
         }

@@ -1,5 +1,5 @@
 
-.bla{
+.bloco{
 width: 100px;
 height: 100px;
 background: #99ccff;
@@ -7,6 +7,9 @@ font-size: 80px;
 color: #ff0000;
 cursor: pointer;
 }
-.ble{
-background: #000066;
+.tabuleiro{
+background-color: #000066;
+width: 130px;
+height: 130px;
+
 }
