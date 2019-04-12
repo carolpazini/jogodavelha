@@ -1,15 +1,20 @@
 
-.bloco{
-width: 100px;
-height: 100px;
-background: #99ccff;
-font-size: 80px;
-color: #ff0000;
-cursor: pointer;
-}
 .tabuleiro{
-background-color: #000066;
-width: 130px;
-height: 130px;
+    width: 408px;
+    height: 408px;
+    float: left;
+    background-color: bisque;
+}
 
+
+.bloco{
+
+    width: 128px;
+    height: 128px;
+    border: 2px solid ;
+    border-color: black;
+    text-align: left ;
+    padding: 2px;
+    float: left;
+    cursor: pointer;
 }
